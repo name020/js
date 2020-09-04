@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js案例</title>
+</head>
+<body>
+<script id="数组案例" >
+	//定义一个空数组，存入信息，并输出。
+	var person =["随便",8,];
+	// person[0]="随便"；
+	// person[1]= 8；
+	console.log(person);
+
+	//遍历数组，将其中偶数找出
+	var numArr=[2,3,7,45,56,389,756];
+	for (var i =0; i<numArr.length; i++) {
+		 if (numArr[i]%2==0) {
+		 	console.log(numArr[i])
+		 }
+	}
+
+	//将数组中值为0去掉，不为0存入新数组
+    var oldArr=[0,"荠菜",6,0,0,"天",0,8,1];
+    var newArr=[];
+    for (var i = 0; i <oldArr.length; i++) {
+    	if (oldArr[i]!==0) {
+    		newArr[newArr.length]=oldArr[i];
+    	}
+       }
+    console.log(newArr);
+
+    //一组数据中最大值和最小值，以及所在位置。
+    var numArr2=[5,2,96,5,-32,589];
+    var max=[],min=[];
+    max[0]=numArr2[0];
+    min[0]=numArr2[0];
+    for (var i = 0; i <numArr2.length; i++) {
+    	if (numArr2[i]>max[0]) {
+    		//最大值
+    		max[0]=numArr2[i];
+    		max[1]=i;
+    	}
+    	if (numArr2[i]<min[0]) {
+    		// 最小值
+    		min[0]=numArr2[i];
+    		min[1]=i;
+    	}
+    }
+    console.log(max+","+min);
+</script>
+<script id="函数案例">
+      // 判断一个数是不是偶数的函数
+      function isEver(num){
+          if (typeof num==="number"&&num%2===0) {
+              alert("正确");
+              return ;
+          }
+          alert("不正确");
+      }
+      isEver("dd");
+
+
+      //模拟写出Math.min(x,y)
+      function getMin(){
+      	var min=arguments[0];
+        for (var i = 0; i <arguments.length; i++) {
+  	        if (arguments[i]<min) {
+    		  // 最小值
+    		  min=arguments[i];
+    	    }
+        }
+         return min;
+      }
+      console.log(getMin(4,5,8,-7));
+
+      // 回调函数
+      function add(num1,num2){return num1+num2};
+      function sub(num1,num2){return num1-num2};
+      function mul(num1,num2){return num1*num2};
+      function divide(num1,num2){return num1/num2};
+
+      function cal(num1,num2,func){
+      	return func(num1,num2);
+      }
+
+      console.log(cal(2,34,add));
+</script>
+<script id="对象案例">
+	// 工厂函数创建对象
+	function createPerson(name,age,sex){
+		var p=new Object();
+		p.name=name;
+		p.age=age;
+		p.sex=sex;
+		p.doIt=function(){
+          alert("行为");
+		}
+		return p;
+    }
+    var person1=createPerson("花花",2,"女");
+    console.log(person1);
+    // 自定义构造函数
+    function Person(name,age,sex){
+    	this.name=name;
+		this.age=age;
+		this.sex=sex;
+		this.doIt=function(){
+          alert("行为");
+		}
+		return this;
+    }
+	var person2=Person("牛奶",5,"男");
+
+	// 如果函数作为一个对象的方法，被对象调用，指向该对象。
+	var obj={
+		name:"dd",
+		func:function(){
+			console.log(this);
+		}
+	}
+	obj.func();
+	//遍历对象的属性
+	for(var key in obj){
+		console.log(key);
+	}
+
+</script>
+</body>
+</html>

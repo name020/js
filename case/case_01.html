@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title> 
+   <style type="text/css" >
+      span{
+      border: 1px solid #000; 
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 2px;
+     }
+   </style>
+  <!-- 石头=0 剪刀=1 布=2 -->
+   <script id="猜拳" type="text/html">
+    var player, computer; 
+    computer=parseInt(Math.random()*3);
+    player=window.prompt();
+    console.log(computer);
+
+    if (player>=0&&player<3) {
+      if ((player==0&&computer==2)||(player==1&&computer==0)||(player==2&&computer==1)) {
+        console.log("电脑赢了");
+      }else if ((player==0&&computer==1)||(player==1&&computer==2)||(player==2&&computer==0)) {
+         console.log("你赢了");
+      }else{
+        console.log("平局");
+      }
+
+    }else{
+      player=window.prompt();
+    }
+  </script>
+  <script id="分级" type="text/html">
+    var n=prompt();
+    switch(parseInt(n/10))
+    {
+      case 10:
+      case 9:
+      console.log("A");
+      break;
+      case 8:
+      console.log("B");
+      break;
+      case 7:
+      console.log("C");
+      break;
+      case 6:
+      console.log("D");
+      break;
+      default :
+      console.log("E");
+      break;
+    }
+  </script>
+  <script id="list" type="text/html" >
+    // 好友列表打印
+     // for (var i = 1; i <=2 ; i++) {
+     //    console.log("好友列表"+i);
+     //    for (var j =  1; j <=3; j++) {
+     //      console.log("好友"+j)
+     //    }
+     // }
+     // 乘法表
+      for (var i = 1; i <=9; i++) {
+         for (var j=1; j<=i; j++) {
+           document.write("<span>"+j+"*"+i+"="+i*j+"</span>");
+         }
+         document.write("<br>");
+      }
+  </script>
+</body>
+</html>

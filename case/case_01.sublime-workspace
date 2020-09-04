@@ -1,0 +1,586 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"boo",
+				"booleanTem\tabc"
+			],
+			[
+				"f",
+				"float\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"ff",
+				"ff9000\tabc"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"t",
+				"table\t<table>"
+			],
+			[
+				"b",
+				"bold\tabc"
+			],
+			[
+				"font-",
+				"font-weight\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"not",
+				"notice\tabc"
+			],
+			[
+				"fi",
+				"first-child\tabc"
+			],
+			[
+				"no",
+				"no-repeat\tabc"
+			],
+			[
+				"input",
+				"inputb\tinput - button"
+			],
+			[
+				"btn",
+				"button\tTag"
+			],
+			[
+				"ma",
+				"margin-top\tproperty"
+			],
+			[
+				"margi",
+				"margin-top\tproperty"
+			],
+			[
+				"align",
+				"vertical-align"
+			],
+			[
+				"fonts",
+				"font-size\tproperty"
+			],
+			[
+				"r",
+				"right\tabc"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"l",
+				"line-height\tabc"
+			],
+			[
+				"la",
+				"last-child"
+			],
+			[
+				"border-",
+				"border-top\tproperty"
+			],
+			[
+				"v",
+				"visible"
+			],
+			[
+				"rgba",
+				"rgba()"
+			],
+			[
+				"p",
+				"padding\tproperty"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"op",
+				"opacity\tproperty"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"bol",
+				"bold"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"li",
+				"linear-gradient\tabc"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"le",
+				"left\tabc"
+			],
+			[
+				"border-bo",
+				"border-box"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"border-r",
+				"border-right\tproperty"
+			],
+			[
+				"lin",
+				"line-height\tproperty"
+			],
+			[
+				"va",
+				"value\tAttr"
+			],
+			[
+				"sub",
+				"submit\tabc"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin\tabc"
+			],
+			[
+				"left",
+				"left\tabc"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"marin",
+				"margin\tproperty"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"bole-",
+				"border-left-color\tproperty"
+			],
+			[
+				"baco",
+				"background-color\tproperty"
+			],
+			[
+				"ov",
+				"overflow\tproperty"
+			],
+			[
+				"fl",
+				"float\tproperty"
+			],
+			[
+				"u",
+				"ul\t<ul>"
+			],
+			[
+				"html",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"o",
+				"orange\tabc"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"ri",
+				"border-radius"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"hr",
+				"href\tAttr"
+			],
+			[
+				"rgb",
+				"rgba(255,255,0,5\tabc"
+			],
+			[
+				"wih",
+				"width\tproperty"
+			],
+			[
+				"lib",
+				"inline-block"
+			],
+			[
+				"lb",
+				"inline-block"
+			],
+			[
+				"fla",
+				"float\tproperty"
+			],
+			[
+				"inputt",
+				"inputt\tinput - text"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"m",
+				"margin\tproperty"
+			],
+			[
+				"ce",
+				"center\ttext-align"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"box-",
+				"box-shadow\tproperty"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"preferencesL",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"psu",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"e",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"r",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/taobao/images/ico_01.png",
+		"/F/taobao/images/ico.png",
+		"/F/taobao/images/user_bg.png",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/F/HtmlCss/case/case_01.html",
+		"/F/HtmlCss/case/xc_index.html",
+		"/F/HtmlCss/css/xc_index.css",
+		"/F/taobao/images/pic_02.png",
+		"/F/taobao/css/reset.css",
+		"/F/taobao/css/index.css",
+		"/F/taobao/images/shop_img_01.jpg",
+		"/F/taobao/images/pic_03.png",
+		"/F/taobao/images/pic_01.png",
+		"/F/taobao/images/ad_02.png",
+		"/F/taobao/images/adbg_01.png",
+		"/F/taobao/images/avatar.png",
+		"/F/taobao/images/code.png",
+		"/F/taobao/font/iconfont.eot",
+		"/C/Users/hotch/Desktop/taobao/font/iconfont.eot",
+		"/C/Users/hotch/Desktop/taobao/font/iconfont.ttf",
+		"/C/Users/hotch/Desktop/taobao/font/iconfont.woff",
+		"/C/Users/hotch/Desktop/taobao/font/iconfont.woff2",
+		"/C/Users/hotch/Desktop/taobao/font/iconfont.svg",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/F/HtmlCss/images/banner.png",
+		"/F/HtmlCss/css/css_01.css",
+		"/C/Users/hotch/Desktop/images/ioc-search.png",
+		"/C/Users/hotch/Desktop/images/ico-head.png",
+		"/C/Users/hotch/Desktop/images/logo.png",
+		"/C/Users/hotch/Desktop/images/warm.png",
+		"/C/Users/hotch/Desktop/images/banner.png",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/CSScomb.sublime-settings",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
+		"/C/Users/hotch/Desktop/bg.jpg",
+		"/F/HtmlCss/case/index.html",
+		"/C/Users/hotch/AppData/Roaming/Sublime Text 3/Packages/User/Localization.sublime-settings"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "case_01.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
