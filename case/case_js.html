@@ -5,6 +5,7 @@
 	<title>js案例</title>
 </head>
 <body>
+	<!-- <input type="text" name="name" id="name" placeholder="输入名字"> -->
 <script id="数组案例" >
 	//定义一个空数组，存入信息，并输出。
 	var person =["随便",8,];
@@ -49,7 +50,7 @@
     }
     console.log(max+","+min);
 </script>
-<script id="函数案例">
+<script id="函数案例" >
       // 判断一个数是不是偶数的函数
       function isEver(num){
           if (typeof num==="number"&&num%2===0) {
@@ -86,7 +87,7 @@
 
       console.log(cal(2,34,add));
 </script>
-<script id="对象案例">
+<script id="对象案例" >
 	// 工厂函数创建对象
 	function createPerson(name,age,sex){
 		var p=new Object();
@@ -121,9 +122,127 @@
 	}
 	obj.func();
 	//遍历对象的属性
-	for(var key in obj){
+	for(var key in ){
 		console.log(key);
 	}
+</script>
+<script id="内置对象"  >
+	// 检查对象是否是数组
+	// 变量名 instanceof 数据类型
+       var arr=["订单","多大"];
+       console.log( arr instanceof Array);//true
+       console.log( arr instanceof Object);//true
+       console.log(arr instanceof Number);//false
+       console.log(arr instanceof Function);//false
+    // 数组属性
+	// Array.isArray(变量名)
+       console.log(Array.isArray(arr));
+     // toString() valueOf()
+     // 转成字符串
+      console.log(arr.toString());
+      console.log(arr.valueOf());
+      // 插入
+      var str=arr.join("--");
+      console.log(str);
+      // 从尾部添加
+      arr.push("多对");
+       // 从头部添加
+       arr.unshift("花花");
+      // 从尾部删除
+      arr.pop();
+      // 从头部删除
+      arr.shift();
+      console.log(arr);
+      //遍历数组
+      arr.forEach(function(value,index,array){
+      	console.log(value);
+      	console.log(index);
+      	console.log(array);
+      });
+      // 模拟sort内部实现
+      // @param {Array}array
+      // @param {Function}fnCompare
+ //      function sort（array,fnCompare){  
+	// for (var i =0; iarray.length-1; i++) {
+	// 	 var sortFlag=true;
+	// 	 for (var j= 0; i < array.length-1-i; i++) {
+	// 	 	Things[i]
+	// 	 }
+	// }
+ //     }
+
+     // map对数组进行一些统一操作
+       var arr1=[10,4,95,4];
+       var arr2=arr1.map(function(value,index,array){
+       	return value+2;
+       });
+       console.log(arr2);
+
+       // 静态成员和实例成员区别
+       var LKTool={
+       	//静态成员
+       	height:30;
+       	doIt:function{
+
+       	}
+       }
+       function Dog(name,age,sex){
+       	//动态成员
+       	this.name=name;
+       	this.age=age;
+       	this.sex=sex;
+       }
+       var dog=new Dog("88",3,"男");
+</script>
+<script id="正则">
+
+	//正则匹配
+	var reg=new RegExp("ab[a-z]","i");
+	var str="Abg";
+	console.log(reg.test(str));
+
+    //正则表达式
+	var reg=/ab[a-z]/i;
+	var str="Abg";
+	console.log(reg.test(str));
+
+	//匹配日期
+	var dateStr="2020-1-9";
+	var dateReg=/^\d{4}-\d{1,2}-\d{1,2}$/;
+	console.log(dateReg.test(dateStr));
+
+    exec()提取 match()提取多个
+    var qqStr="小花：2223,护士：8755,计算：4448";
+    var qqReg=/\d+/g;
+    // console.log(qqReg.exec(qqStr));
+    console.log(qqStr.match(qqReg)); 
+
+    //替换 replace() 方法
+    var reStr="    计算  时间";
+     console.log(reStr);
+    reStr=reStr.replace(/^\s*/,"*");
+    console.log(reStr);
+
+    //验证
+     checkInput("name7",/^[\u4e00-\u9fa5]{0,}$/);
+    function checkInput(nameId,nameReg){
+    	// var name=document.getElementById(nameId);
+    		if (!nameReg.test(nameId)) {
+    			alert("错误");
+    		}
+    }
+    //待验证
+    // checkInput("name",/^[\u4e00-\u9fa5]{0,}$/);
+    // function checkInput(nameId,nameReg){
+    // 	var name=document.getElementById(nameId);
+    // 	name.onblur=function(nameReg){
+    // 		if (!nameReg.test(this.value)) {
+    // 			this.style.borderColor="red";
+    // 		}
+    // 	}
+
+    // }
+
 
 </script>
 </body>
