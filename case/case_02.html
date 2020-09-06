@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>案例</title>
+	<style type="text/css">
+		#picRoll{
+			width: 1200px;
+			margin: 0px auto;
+		}
+        
+        #picClose{
+        	position: relative;
+        }
+		#close{
+			position: absolute;
+			left: 450px;
+		}	
+
+	</style>
+</head>
+<body>
+	<div id="picRoll">
+		<img id="icon" src="../images/pic_01.png" alt="">
+		<button id="prev" type="button" >上一张</button>
+		<button id="next" type="button">下一张</button>
+	</div>
+	<div id="picClose">
+		<img id="picture" src="../images/shui.jpg" alt="" width="500px">
+		<img id="close" src="../images/del.jpg" alt="" width="50px">
+	</div>
+     
+	<script>
+		window.onload=function(ev){
+			//图片轮播
+			var icon=document.getElementById("icon");
+			var prev=document.getElementById("prev");
+			var next=document.getElementById("next");
+
+			var indexIocn=1,max=3,min=1;
+			next.onclick = function(ev1){ 
+				if (indexIocn==max) {
+                    indexIocn=1;
+				}else{
+					indexIocn++;
+				}
+				icon.setAttribute("src","../images/pic_0"+indexIocn+".png");
+			}
+			prev.onclick=function(ev1){
+				if (indexIocn==min) {
+                    indexIocn=3;
+				}else{
+					indexIocn--;
+				}
+				icon.setAttribute("src","../images/pic_0"+indexIocn+".png");
+			}
+		}
+	</script>
+
+	<script>
+		//关闭图片
+		window.onload=function(ev){
+             //方法一
+			// var picClose=document.getElementById("picClose");
+			// var picture=document.getElementById("picture");
+			// var close=document.getElementById("close");
+			// close.onclick=function(ev){
+			// 	picClose.removeChild(picture);
+			// 	picClose.removeChild(close);
+			// }
+              var close=document.getElementById("close");
+              close.onclick=function(){
+              	//父节点删除
+              	this.parentNode.remove();
+              	//隐藏
+              	//this.parentNode.style.display="none";
+              }
+		}
+	</script>
+</body>
+</html>

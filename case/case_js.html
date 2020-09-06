@@ -5,8 +5,16 @@
 	<title>js案例</title>
 </head>
 <body>
-	<!-- <input type="text" name="name" id="name" placeholder="输入名字"> -->
-<script id="数组案例" >
+	<div id="box">
+	<input type="text" name="name" id="name" placeholder="输入名字">
+    <button type="button" id="btn">点击</button>
+    <span id="span">
+    	<a href="#" title="">连接</a>
+    	<a href="#" title="">接</a>
+    </span>
+    </div>
+
+<script id="数组案例" type="text/html ">
 	//定义一个空数组，存入信息，并输出。
 	var person =["随便",8,];
 	// person[0]="随便"；
@@ -50,7 +58,7 @@
     }
     console.log(max+","+min);
 </script>
-<script id="函数案例" >
+<script id="函数案例"  type="text/html ">
       // 判断一个数是不是偶数的函数
       function isEver(num){
           if (typeof num==="number"&&num%2===0) {
@@ -87,7 +95,7 @@
 
       console.log(cal(2,34,add));
 </script>
-<script id="对象案例" >
+<script id="对象案例"  type="text/html ">
 	// 工厂函数创建对象
 	function createPerson(name,age,sex){
 		var p=new Object();
@@ -126,7 +134,7 @@
 		console.log(key);
 	}
 </script>
-<script id="内置对象"  >
+<script id="内置对象"   type="text/html ">
 	// 检查对象是否是数组
 	// 变量名 instanceof 数据类型
        var arr=["订单","多大"];
@@ -194,7 +202,7 @@
        }
        var dog=new Dog("88",3,"男");
 </script>
-<script id="正则">
+<script id="正则"  type="text/html ">
 
 	//正则匹配
 	var reg=new RegExp("ab[a-z]","i");
@@ -242,8 +250,51 @@
     // 	}
 
     // }
+</script >
+<script id="DOM">
+	//文档页面元素获取
+	window.onload=function(ev){
+		var btn=document.getElementById("btn");
+		var a=document.getElementsByTagName('a')[0];
+		var box=document.getElementById("box");
+		console.log(btn);
+	    //获取父节点
+		console.log(a.parentNode);
+		// 下一个兄弟节点
+		console.log(btn.nextElementSibling||btn.nextSibling);
+		// 上一个兄弟节点
+		console.log(btn.previousElementSibling||btn.previousSibling);
+		// 获取第一个子节点
+		console.log(box.firstElementChild||box.firstChild);
+		// 获取全部子节点
+		console.log(box.childNodes);
+		//获取元素子节点
+		console.log(box.children);
+		//添加元素节点
+		var img =document.createElement("img");
+        img.src="../images/logo.png";
+        // box.appendChild(img);
+		// 插入节点
+		box.insertBefore(img,btn);
+		//删除节点
+		// box.removeChild(img)[0];
+		// 克隆
+		// box.cloneNode();//浅克隆，仅克隆当前节点
+		// box.cloneNode(true);//深克隆，同时克隆子节点
+		//节点属性
+		//获取节点属性
+		console.log(img.getAttribute("src"));
+		//设置节点属性
+		img.setAttribute("alt","这是logo");
+		//删除节点属性
+		img.removeAttribute("alt");
 
+
+	}
 
 </script>
+
+
+
 </body>
 </html>
