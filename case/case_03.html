@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" >
+		*{
+			margin:0;
+			padding: 0;
+			list-style: none;
+			vertical-align: top;
+		}
+		body{
+			background: url("../images/pic_01.png") ;
+			background-size: cover;
+		}
+		#picChange ul{
+			display: flex;justify-content: space-around;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		#picChange ul li img{
+            /* width: 180px; height:120px; */
+            margin:10px auto; 
+		}
+
+		#panel{
+			width: 400px;
+			box-shadow: 0 0 10px #000;
+			padding:20px;
+		}
+		.panel-header .panel-content .panel-footer{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- 图片切换（闭包） -->
+	<div id="picChange">
+		<ul>
+			<li><img src="../images/pic_01.png" alt=""></li>
+			<li><img src="../images/pic_02.png" alt=""></li>
+			<li><img src="../images/pic_03.png" alt=""></li>
+			<li><img src="../images/pic_04.png" alt=""></li>
+			<li><img src="../images/pic_05.png" alt=""></li>
+		</ul>
+	</div>
+	<!-- 批量选择 -->
+	<div id="panel">
+		<section class="panel-header">
+			<h2>歌曲排行榜</h2>
+			<hr>
+		</section>
+		<section class="panel-content">
+			<label><input type="checkbox" name=""></label>时间都去哪了<br>
+			<label><input type="checkbox" name=""></label>海阔天空<br>
+			<label><input type="checkbox" name=""></label>不再犹豫<br>
+			<label><input type="checkbox" name=""></label>老街<br>
+			<label><input type="checkbox" name=""></label>光辉岁月<br>
+		</section>
+		<section class="panel-footer">
+			<hr>
+			<button id="allSelect">全选</button>
+			<button id="cancelSelect">取消选中</button>
+			<button id="reverseSelect">反选</button>
+		</section>
+	</div>
+	<div id="change">
+		<input type="text" name="" placeholder="请输入姓名">
+	</div>
+	
+	<script>
+		window.onload=function(ev){
+			// 图片切换（闭包） 
+			var picChange=document.getElementById("picChange");
+			var picList=picChange.getElementsByTagName("li");
+			console.log(picChange);
+			console.log(picList);
+
+			for (var i = 0; i < picList.length; i++) {
+				var p=picList[i];
+
+				(function(index){
+					p.addEventListener("click",function(ev){
+						document.body.style.background="url('../images/pic_0"+index+".png') ";
+					})
+				})(i+1)
+			} 
+            // 批量选择
+            var inputs=document.querySelectorAll("input");
+              
+            $("allSelect").addEventListener("click",function(ev){
+            	for (var i = 0; i <inputs.length; i++) {
+            	var input= inputs[i];
+            	input.checked=true;
+            	}
+            });
+
+            $("cancelSelect").addEventListener("click",function(ev){
+            	for (var i = 0; i <inputs.length; i++) {
+            	var input= inputs[i];
+            	input.checked=false;
+            	}
+            });
+
+            $("reverseSelect").addEventListener("click",function(ev){
+            	for (var i = 0; i <inputs.length; i++) {
+            	var input= inputs[i];
+            	input.checked=!input.checked;
+            	}
+            });
+
+			function $(id){
+				return typeof id==='string'?document.getElementById(id):null;
+			}
+
+			// 获得焦点
+			var change=document.getElementById("change");
+			var input=change.firstElementChild||change.firstChild;
+			console.log(input);
+			input.onfocus=function(ev){
+				this.style.width="600px";
+				this.style.height="40px";
+				this.style.outline="none";
+				this.style.fontSize="20px";
+			}
+			//失去焦点
+			input.onblur=function(ev){
+				this.style.border="10px solid red";
+				this.style.color="red";
+			}
+
+		}
+	</script>
+</body>
+</html>
