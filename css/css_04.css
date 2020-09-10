@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding: 0;
+    list-style: none;
+}
+/* 选项卡 */
+#tab{
+	width: 500px;
+	height: 200px;
+	border: 1px solid #cccccc;
+}
+#tab_header ul li{
+	float: left;
+	padding: 6px 34px;
+	background-color: #cccccc;
+	border-bottom: 1px solid #cccccc ;
+}
+#tab_header ul li.selected{
+	 background-color: #fff;
+	 border-bottom: none;
+}
+#tab_header ul li:hover{
+	background-color: #fff;
+	border-bottom: none;
+}
+#tab_content ul {
+	width: 500px;
+	height: 166px;
+	display: none;
+}
+#tab_content {
+	position: relative;
+	top: 34px;
+}
+#tab_content ul {
+	position: absolute;  
+	
+}
+
+/* 发表评论 */
+#comment{
+	width: 800px;
+	border: 1px solid #cccccc;
+	margin: 0 auto;
+	padding: 20px;
+}
+#my_textarea{
+	width: 80%;
+	height: 120px;
+}
+#commentList{
+	margin: 0 80px;
+}
+#commentList li{
+	border: 1px dashed #ccc;
+	color: red;
+	line-height: 44px;
+}
+#commentList li a{
+	float: right;
+}
