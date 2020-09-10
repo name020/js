@@ -68,7 +68,18 @@
 	<div id="change">
 		<input type="text" name="" placeholder="请输入姓名">
 	</div>
-	
+	<!-- 上传图片(判断图片格式) -->
+	<label for=""></label>
+	<input type="file" id="file">
+	<!-- （排他思想） -->
+	<button >按钮1</button>
+    <button >按钮2</button>
+    <button >按钮3</button>
+    <button >按钮4</button>
+    <button >按钮5</button>
+
+
+
 	<script>
 		window.onload=function(ev){
 			// 图片切换（闭包） 
@@ -131,6 +142,29 @@
 			}
 
 		}
+		// 上传图片(判断图片格式) 
+		var file=document.getElementById("file");
+		file.onchange=function(){
+			var src=this.value;
+			var sur=src.substring(src.length-4,src.length);
+			if (sur.toLowerCase()==".jpg"||sur.toLowerCase()==".png"||sur.toLowerCase()==".gif") {
+				alert("格式正确");
+
+			}else{
+			   alert("格式不正确");
+		    }
+			}
+			// 排他
+			var btns=document.getElementsByTagName("button");
+             console.log(i);
+			for (var i = 0; i < btns.length; i++) {
+				(function (i){
+					console.log(i);
+					btns[i].onclick=function(ev){
+					console.log(i);
+				  }
+				})(i)		
+			}
 	</script>
 </body>
 </html>
