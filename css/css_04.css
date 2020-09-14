@@ -59,3 +59,13 @@
 #commentList li a{
 	float: right;
 }
+/* 九宫格 */
+.box{
+	width: 220px;
+	height: 360px;
+	margin: 0px 15px 15px 0;
+	background-color: #e8e8e8;
+}
+#button{
+	position: relative;
+}
