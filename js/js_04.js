@@ -44,8 +44,8 @@ window.onload=function(ev){
 	//九宫格
     var button=$("button");
     var allCols=button.children;
-    var container=$("container").firstElementChild; 
-        j_flex(4,allCols);
+    var container=$("container").firstElementChild;
+        j_flex(3,allCols);
     function j_flex(i,allCols){
         for (var j = 0; j <allCols.length; j++) {
                    var row=Math.floor(j/i);
@@ -56,7 +56,5 @@ window.onload=function(ev){
                 }
 
     }
-    
-
 
 }

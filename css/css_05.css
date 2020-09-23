@@ -1,0 +1,16 @@
+/* 定时器 */
+#box2{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	left: 0px;
+}
+#box3{
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	position: absolute;
+	top: 150px;
+	left: 0px;
+}
