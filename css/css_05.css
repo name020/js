@@ -1,3 +1,7 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
 /* 定时器 */
 #box2{
 	width: 100px;
@@ -13,4 +17,41 @@
 	position: absolute;
 	top: 150px;
 	left: 0px;
+}
+/* 图片轮播2 */
+#outer{
+	width: 218px;
+	height: 84px;
+	background-color: greenyellow;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+#imgList {
+	position: absolute;
+	left: 0px;	
+}
+#imgList li{
+list-style: none;
+width: 210px;
+float: left;
+margin: 4px;
+}
+#navDiv{
+	position: absolute;
+	left: 0px;
+	bottom:2px;
+}
+#navDiv a{
+	width: 8px;
+	height: 8px;
+	float: left ;
+	background-color: red;
+	opacity: 0.6;
+	/*兼容ie8透明
+	filter:alpha(opacity=50); */
+	margin: 0px 2px;
+}
+#navDiv a:hover{
+	background-color: black;
 }
