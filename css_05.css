@@ -1,0 +1,135 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+/* 定时器 */
+#box2{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	left: 0px;
+}
+#box3{
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	position: absolute;
+	top: 150px;
+	left: 0px;
+}
+/* 图片轮播2 */
+#outer{
+	width: 218px;
+	height: 84px;
+	background-color: greenyellow;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+#imgList {
+	position: absolute;
+	left: 0px;	
+}
+#imgList li{
+list-style: none;
+width: 210px;
+float: left;
+margin: 4px;
+}
+#navDiv{
+	position: absolute;
+	left: 0px;
+	bottom:2px;
+}
+#navDiv a{
+	width: 8px;
+	height: 8px;
+	float: left ;
+	background-color: red;
+	opacity: 0.6;
+	/*兼容ie8透明
+	filter:alpha(opacity=50); */
+	margin: 0px 2px;
+}
+#navDiv a:hover{
+	background-color: black;
+}
+
+/* 类的操作 */
+.temp{
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+}
+.temp1{
+	width: 1000px;
+	height: 100px;
+	background-color: pink;
+}
+
+ /* 二级菜单  */
+ .sdmenu{
+	width: 150px;
+	margin: 0 auto;
+	font-family: Arial,sans-serif;
+	font-size: 12px;
+	background-color: #000;
+	border-radius: 10px 10px 0 0; 
+}
+.sdmenu span{
+	display:block;
+	box-sizing: border-box;
+	height: 25px;
+	color: #fff;
+	padding: 6px 10px;
+}
+.sdmenu ul li{
+	padding: 4px 10px;
+	background-color: #eee;
+}
+/* .sdmenu ul{
+	display: none;
+} */
+.collapsed {
+	display: none;
+}
+/* .menuspan{
+	display: block;
+	
+} */
+/* .sdmenu{
+	width: 150px;
+	margin: 0 auto;
+	font-family: Arial,sans-serif;
+	font-size: 12px;
+	background-color: #000;
+	border-radius: 10px 10px 0 0; 
+}
+.sdmenu a , .sdmenu span{
+	width: 150px;
+	height: 25px;
+	padding: 4px 10px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.sdmenu a{
+    text-decoration: none;
+    background-color: #eee;
+    color: #13b5b1;
+    border-bottom: 1px solid  #c9c9c9;
+
+}
+.sdmenu span{
+	color: #fff;
+}
+div.collapsed{
+	height: 25px;
+	display: none;
+}
+div.menuspan{
+	height: 25px;
+	display:inline-block;
+}  */
