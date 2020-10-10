@@ -18,35 +18,6 @@ window.onload=function(ev){
 		});
 		});
 	}
-    /*参数
-    *obj：执行动画的对象
-    *attr:执行属性
-    *target目标位置
-    *speed:速度
-    *callback:回调函数
-    */
-    // var timer;
-    function move(obj,attr,target,speed,callback){
-    	clearInterval(obj.timer);
-    	var i;
-    	if (parseInt(getComputedStyle(obj,null)[attr])>target) {
-    		
-    		speed=-speed;
-    	}
-    	
-    	obj.timer=setInterval(function(){
-    		i=parseInt(getComputedStyle(obj,null)[attr])+speed;
-    		if (speed>0&&i>target||speed<0&&i<target) {
-    			i=target;
-    		}
-    		obj.style[attr]=i+"px";
-    		if (i===target) {
-    			clearInterval(obj.timer);
-    			callback && callback();
-    		}
-    	},100);
-    }
-   
 
     // 图片轮播2
     var outer=document.getElementById("outer");
@@ -65,7 +36,7 @@ window.onload=function(ev){
     			clearInterval(timer);
     			setA(i);
     			move(imgList,"left",-i*outer.offsetWidth,20,function(){
-    				autoChange();
+    				 
     			});
     			
     		}
@@ -95,4 +66,39 @@ window.onload=function(ev){
     	a[index].style.backgroundColor="black";
     }
     autoChange();
+  
+    // 类的操作
+    var boxBtn=document.getElementById("boxBtn");
+    var boxDiv=document.getElementById("boxDiv");
+    boxBtn.onclick=function(ev){
+    	addClass(boxDiv,"temp1");
+    	// removeClass(boxDiv,"temp1");
+    	// updateClass(boxDiv,"temp1");
+    }
+
+    // 二级菜单
+    // collapsed menuspan折叠
+     var menu=document.getElementById("my_menu")
+     var menuBtn=menu.getElementsByTagName("span");
+     var menuDiv=menu.getElementsByTagName("ul");
+     
+     for (var i = 0; i < menuBtn.length; i++) {
+     	//初始化二级菜单（折叠)
+     	updateClass(menuBtn[i].nextElementSibling,"collapsed");
+     	//
+     	var openDiv=menuBtn[0].nextElementSibling;
+     	(function(i){
+        menuBtn[i].onclick=function(){
+        
+        	//切换菜单
+        	toggleClass(menuBtn[i].nextElementSibling,"collapsed");
+        	//判断已开菜单是否当前&&已开菜单不包含
+        	if (openDiv!=menuBtn[i].nextElementSibling&&!hasClass(openDiv,'collapsed')) {
+        		toggleClass(openDiv,"collapsed");
+        	}
+             openDiv=menuBtn[i].nextElementSibling;
+        }
+     	}(i));
+
+     }
 }
